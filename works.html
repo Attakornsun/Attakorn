@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Attakorn Duanjinda | ใบงาน</title><link rel="stylesheet" href="style.css"></head><body>
+  <header class="navbar" id="top">
+    <a class="brand" href="index.html">Attakorn Duanjinda</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link "><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>หน้าแรก</span></a>
+      <a href="about.html" class="nav-link "><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg><span>ประวัติส่วนตัว</span></a>
+      <a href="works.html" class="nav-link active"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg><span>ผลงาน</span></a>
+    </nav>
+  </header>
+
+<main>
+  <section class="banner-only"><img class="profile-banner-full" src="images/NEWPROFILE.png" alt="แบนเนอร์ผลงาน"></section>
+  <section class="works-grid section">
+    <article class="info-card">
+      <div class="card-icon">01</div>
+      <h3>ใบงานที่ 1</h3>
+      <p>ตัวอย่างหน้าแรกของใบงาน คลิกที่ภาพเพื่อขยาย</p>
+      <button class="work-image-button" type="button" data-image="images/assignment-1-preview.jpg" data-alt="หน้าแรกของใบงานที่ 1: สร้างสไลท์ใหม่ตามแบบนักศึกษาบทที่ 1" aria-label="ดูภาพตัวอย่างใบงานที่ 1 ขนาดเต็ม">
+        <img src="images/assignment-1-preview.jpg" alt="หน้าแรกของใบงานที่ 1: สร้างสไลท์ใหม่ตามแบบนักศึกษาบทที่ 1">
+      </button>
+      <a class="work-pdf-link" href="PDF/สร้างสไลท์ใหม่ตามแบบนักศึกษาบทที่%201.pdf" target="_blank" rel="noopener noreferrer">
+        เปิด PDF ทั้ง 16 หน้า <span aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="info-card">
+      <div class="card-icon">02</div>
+      <h3>Mind Map บทที่ 1</h3>
+      <p>คลิกที่ภาพเพื่อดูขนาดเต็ม</p>
+      <button class="work-image-button" type="button" data-image="images/Mind%20Map%20บทที่%201.png" data-alt="Mind Map บทที่ 1" aria-label="ดู Mind Map บทที่ 1 ขนาดเต็ม">
+        <img src="images/Mind%20Map%20บทที่%201.png" alt="Mind Map บทที่ 1">
+      </button>
+    </article>
+    <article class="info-card">
+      <div class="card-icon">03</div>
+      <h3>คำตอบจากหน่วยที่ 1</h3>
+      <p>คลิกที่ภาพเพื่อดูขนาดเต็ม</p>
+      <div class="work-image-list">
+        <button class="work-image-button" type="button" data-image="images/ตอบคำถามจากหน่วยที่%201%20ตอนที่%201.png" data-alt="ตอบคำถามจากหน่วยที่ 1 ตอนที่ 1" aria-label="ดูคำตอบจากหน่วยที่ 1 ตอนที่ 1 ขนาดเต็ม">
+          <img src="images/ตอบคำถามจากหน่วยที่%201%20ตอนที่%201.png" alt="ตอบคำถามจากหน่วยที่ 1 ตอนที่ 1">
+        </button>
+        <button class="work-image-button" type="button" data-image="images/ตอบคำถามจากหน่วยที่%201%20ตอนที่%202.png" data-alt="ตอบคำถามจากหน่วยที่ 1 ตอนที่ 2" aria-label="ดูคำตอบจากหน่วยที่ 1 ตอนที่ 2 ขนาดเต็ม">
+          <img src="images/ตอบคำถามจากหน่วยที่%201%20ตอนที่%202.png" alt="ตอบคำถามจากหน่วยที่ 1 ตอนที่ 2">
+        </button>
+      </div>
+    </article>
+  </section>
+  <dialog class="image-preview-dialog" id="imagePreviewDialog" aria-label="ดูภาพขนาดเต็ม">
+    <button class="image-preview-close" id="closeImagePreview" type="button" aria-label="ปิดภาพ">×</button>
+    <img id="imagePreview" alt="">
+    <p id="imagePreviewCaption"></p>
+  </dialog>
+</main>
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html">Attakorn Duanjinda</a>
+        <p>เว็บไซต์ส่วนตัวและผลงานระหว่างการเรียน</p>
+      </div>
+      <nav class="footer-nav" aria-label="เมนูส่วนท้าย">
+        <a href="index.html">หน้าแรก</a>
+        <a href="works.html">ผลงาน</a>
+        <a href="about.html">ประวัติส่วนตัว</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Attakorn Duanjinda</p>
+      <a href="#top">กลับขึ้นด้านบน ↑</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body></html>
